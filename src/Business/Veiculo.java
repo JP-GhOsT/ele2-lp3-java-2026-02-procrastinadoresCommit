@@ -1,10 +1,10 @@
 package Business;
 
 public abstract class Veiculo {
-    private String modelo;
-    private String fabricante;
-    private int ano;
-    private int velocidadeAtual;
+    protected String modelo;
+    protected String fabricante;
+    protected int ano;
+    protected int velocidadeAtual;
 
     public void acelerar(){
         this.velocidadeAtual = velocidadeAtual + 5;
