@@ -6,6 +6,12 @@ public abstract class Veiculo {
     protected int ano;
     protected int velocidadeAtual;
 
+    public Veiculo(String modelo, String fabricante, int ano) {
+        this.modelo = modelo;
+        this.fabricante = fabricante;
+        this.ano = ano;
+    }
+
     public void acelerar(){
         this.velocidadeAtual = velocidadeAtual + 5;
     }
