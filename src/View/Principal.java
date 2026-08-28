@@ -38,7 +38,9 @@ public class Principal {
             default:
                 System.out.println("Não existem mais escolhas disponiveis");
         }
+           while (true){
 
+           }
 
     }
 }
