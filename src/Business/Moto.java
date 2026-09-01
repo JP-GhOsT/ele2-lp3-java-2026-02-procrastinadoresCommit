@@ -5,7 +5,8 @@ public class Moto extends Veiculo {
     protected boolean descansoAcionado = true;
 
     public Moto(int ano, String fabricante, String modelo) {
-        super(ano, fabricante, modelo);
+
+        super(modelo, fabricante, ano);
     }
 
     @Override
@@ -27,6 +28,8 @@ public class Moto extends Veiculo {
             descansoAcionado = false;
         }
     }
-
+    public boolean isDescansoAcionado() {
+        return descansoAcionado;
+    }
 
 }
