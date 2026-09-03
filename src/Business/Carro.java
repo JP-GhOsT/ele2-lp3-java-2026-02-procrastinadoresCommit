@@ -10,6 +10,10 @@ public class Carro extends Veiculo {
 
     @Override
     public  void acelerar(){
+        if(velocidadeAtual >= 180){
+            System.out.println("O limite de velocidade é 180");
+            return;
+        }
         velocidadeAtual += 10;
     }
 
