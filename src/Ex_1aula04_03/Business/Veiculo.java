@@ -1,4 +1,4 @@
-package Business;
+package Ex_1aula04_03.Business;
 
 public abstract class Veiculo {
     protected String modelo;
