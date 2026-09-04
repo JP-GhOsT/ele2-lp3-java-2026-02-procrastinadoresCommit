@@ -11,11 +11,7 @@ public class Moto extends Veiculo {
 
     @Override
     public void acelerar(){
-        if(velocidadeAtual >= 180){
-            System.out.println("O limite de velocidade é 180");
-            return;
-        }
-        velocidadeAtual += 5;
+        super.acelerar();
         if(velocidadeAtual > 0){
             descansoAcionado = false;
         }

@@ -6,10 +6,17 @@ public abstract class Veiculo {
     protected int ano;
     protected int velocidadeAtual = 0;
 
-    public Veiculo(String modelo, String fabricante, int ano) {
+    private Motor _motor;
+    private Manutencao _manutencao;
+
+    public Veiculo(String modelo, String fabricante, int ano, int potencia, String tipo, String dataUltimaManutencao, String tipoServico) {
         this.modelo = modelo;
         this.fabricante = fabricante;
         this.ano = ano;
+
+        this._motor = new Motor(potencia,tipo);
+        this._manutencao = new Manutencao(dataUltimaManutencao,tipoServico);
+
     }
 
     public void acelerar(){

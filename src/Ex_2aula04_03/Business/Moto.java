@@ -2,11 +2,12 @@ package Ex_2aula04_03.Business;
 
 public class Moto extends Veiculo {
 
+
     protected boolean descansoAcionado = true;
 
-    public Moto(int ano, String fabricante, String modelo) {
-
-        super(modelo, fabricante, ano);
+    public Moto(String modelo,String fabricante,int ano,int  quantPortas,int potencia,String tipo,String dataUltimaManutencao,String tipoServico) {
+        super(modelo, fabricante, ano, potencia, tipo, dataUltimaManutencao, tipoServico);
+        this.descansoAcionado = descansoAcionado;
     }
 
     @Override

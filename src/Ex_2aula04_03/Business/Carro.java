@@ -3,9 +3,10 @@ package Ex_2aula04_03.Business;
 public class Carro extends Veiculo {
     private int quantidadeDePortas;
 
-    public Carro(String modelo, String fabricante, int ano, int quantidadeDePortas) {
-        super(modelo, fabricante, ano);
-        this.quantidadeDePortas = quantidadeDePortas;
+
+    public Carro(String modelo,String fabricante,int ano,int  quantPortas,int potencia,String tipo,String dataUltimaManutencao,String tipoServico) {
+        super(modelo, fabricante, ano, potencia, tipo, dataUltimaManutencao, tipoServico);
+        this.quantidadeDePortas = quantPortas;
     }
 
     @Override

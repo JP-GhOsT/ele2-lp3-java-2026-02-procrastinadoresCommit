@@ -5,6 +5,7 @@ public abstract class Veiculo {
     protected String fabricante;
     protected int ano;
     protected int velocidadeAtual = 0;
+    protected int VELOCIDADEMAX = 180;
 
     public Veiculo(String modelo, String fabricante, int ano) {
         this.modelo = modelo;
@@ -13,7 +14,7 @@ public abstract class Veiculo {
     }
 
     public void acelerar(){
-            if(velocidadeAtual >= 180){
+            if(velocidadeAtual >= VELOCIDADEMAX){
                 System.out.println("O limite de velocidade é 180");
             return;
             }
